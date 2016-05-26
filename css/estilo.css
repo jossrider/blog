@@ -25,15 +25,41 @@ h1,h2,h3,h4,h5,h6{
     font-family: ubuntuBold;
 }
 
-h1,h2{
-    transform: translate(150px 0px);
-    position: relative;
+h1{
     color: white;
-    font-size: 20px;
+    font-size: 36px;
     top: -20%;
     margin-top: 10px;
     letter-spacing: 0px;
     display: inline;
+    text-shadow: 2px 2px 5px rgba(0,0,0,1);
+}
+
+h2{
+    color: white;
+    font-size: 16px;
+    top:-20%;
+    margin-top:10px;
+    letter-spacing: 0px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+h3{
+    margin: 0px;
+    padding: 0px;
+    font-size: 36px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+h4{
+    margin: 0px;
+    padding: 0px;
+    font-size: 14px;
+}
+
+#tipo{
+    position: absolute;
+    transform: translate(150px,-80px);
 }
 
 /* menu de navegacion */
@@ -115,9 +141,6 @@ header{
     height: 100px;
 /*    background: darkgray;*/
     overflow: hidden;
-    border: 2px solid white;
-    border-radius: 35px 5px 0px 0px;
-    box-shadow: 0px 0px 10px white;
 }
 
 #logo{
@@ -216,7 +239,7 @@ aside ul li a{
     color: white;
     display: table;
     background: black;
-    font-size: 10px;
+    font-size: 12px;
     text-decoration: none;
     text-align: justify;
     overflow: hidden;
@@ -289,4 +312,42 @@ aside ul li a{
     margin: 10px;
     position: absolute;
     transform: translate(-140px, 0px);
+}
+
+[required]{
+    border-color: green;
+    box-shadow: 0px 0px 5px green;
+}
+
+
+:invalid{
+    border-color: red;
+    box-shadow: 0px 0px 50px red;
+}
+
+form table{
+    width: 100%;
+    border: 0px solid white;
+    padding: 0px;
+    margin: auto;
+}
+
+form{
+    font-family: ubuntuRegular;
+    color: black;
+    text-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+    border-radius: 0px 15px 0px 15px;
+    box-shadow: 10px 10px 25px rgba(0,0,0,0.5);
+    background: rgba(255,255,255,0.5);
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+}
+
+form input, form textarea{
+    font-family: ubuntuRegular;
+    font-size: 10px;
+    background: rgba(255,255,255,0.5);
+    border: 1px dotted white;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
 }
